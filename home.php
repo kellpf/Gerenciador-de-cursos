@@ -58,7 +58,7 @@ session_start();
 
             <ul class="list-unstyled">
                 <li class="media  my-4">
-                    <img src="imgjava.jpg" class="mr-3" alt="...">
+                    <img src="img/imgjava.jpg" class="mr-3" alt="...">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">List-based media object</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -67,7 +67,7 @@ session_start();
                 </li>
                 <hr>
                 <li class="media my-4">
-                    <img src="imgpython.jpg" class="mr-3" alt="...">
+                    <img src="img/imgpython.jpg" class="mr-3" alt="...">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">List-based media object</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -76,7 +76,7 @@ session_start();
                 </li>
                 <hr>
                 <li class="media my-4">
-                    <img src="imgphp.jpg" class="mr-3" alt="...">
+                    <img src="img/imgphp.jpg" class="mr-3" alt="...">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">List-based media object</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -85,7 +85,7 @@ session_start();
                 </li>
                 <hr>
                 <li class="media my-4">
-                    <img src="imgsql.jpg" class="mr-3" alt="...">
+                    <img src="img/imgsql.jpg" class="mr-3" alt="...">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">List-based media object</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -94,7 +94,7 @@ session_start();
                 </li>
                 <hr>
                 <li class="media my-4">
-                    <img src="imgpython.jpg" class="mr-3" alt="...">
+                    <img src="img/imgpython.jpg" class="mr-3" alt="...">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">List-based media object</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
@@ -103,7 +103,7 @@ session_start();
                 </li>
                 <hr>
                 <li class="media my-4">
-                    <img src="imgphoto.jpg" class="mr-3" alt="...">
+                    <img src="img/imgphoto.jpg" class="mr-3" alt="...">
                     <div class="media-body">
                         <h5 class="mt-0 mb-1">List-based media object</h5>
                         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
