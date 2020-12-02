@@ -8,7 +8,7 @@ include('connection.php');
  * exit();
  * }
  */
-
+ 
 $usuario = mysqli_real_escape_string($con, $_POST['usuario']);
 $senha = mysqli_real_escape_string($con, $_POST['senha']);
 
