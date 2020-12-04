@@ -2,8 +2,8 @@
 define('HOST', 'localhost');
 define('USUARIO', 'root');
 define('SENHA', '');
-define('BD', 'bd_gerenciador_cursos');
+define('BD', 'bd_cursos');
 
 $con = mysqli_connect(HOST, USUARIO, SENHA, BD) or die ('Não foi possível conectar');
 
-echo "pqp";
+//echo "pqp";

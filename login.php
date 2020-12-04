@@ -12,7 +12,7 @@ include('connection.php');
 $usuario = mysqli_real_escape_string($con, $_POST['usuario']);
 $senha = mysqli_real_escape_string($con, $_POST['senha']);
 
-$query = "select id_usuario, usuario from tb_usuarios where usuario= '{$usuario}' and senha = '{$senha}'";
+$query = "select  usuario from tb_usuarios where usuario= '{$usuario}' and senha = '{$senha}'";
 
 $result = mysqli_query($con, $query);
 
