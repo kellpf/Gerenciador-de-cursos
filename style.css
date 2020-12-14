@@ -1,0 +1,17 @@
+.cert {
+        margin-left: 230px;
+}
+
+.corpo {
+    position: relative;
+    top: -550px;
+    text-decoration: none;
+    text-align: center;
+}   
+
+a{
+    color: white;
+}
+a:hover {
+    color: white;
+}

@@ -9,7 +9,7 @@
 <body>
 
     <div class="container">
-        <div class="row justify-content-md-center mt-5" class="teste">
+        <div class="row justify-content-md-center mt-5" >
             <div class="col-3">
             </div>
             <div class="col-6 mt-5 card">
@@ -27,7 +27,7 @@
 
                     <div class="row no-gutters bg-light position-relative">
                     <div class="col-md-8 position-static ">
-                        <a href="cadastro.php" class="stretched-link text-primary">Ainda não é nosso aluno? Clique aqui!</a>
+                        <a href="view-cadastro.php" class="stretched-link text-primary">Ainda não é nosso aluno? Clique aqui!</a>
                     </div>
                     </div>
 
