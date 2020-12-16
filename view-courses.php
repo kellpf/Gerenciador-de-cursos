@@ -9,7 +9,7 @@ include('connection.php');
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <title>Home</title>
+    <title>Meus Cursos</title>
 </head>
 
 <body>
@@ -41,17 +41,18 @@ include('connection.php');
         </ul>
     </div>
 
-    <?php
-    $user = $_SESSION['usuario'];
+    <div class="container mt-5">
+    <h5 style="color: gray;">Seus Cursos:</h5>
+        <?php
+        $user = $_SESSION['usuario'];
 
-    $query = "select id_curso, nome_curso from tb_cursos
+        $query = "select id_curso, nome_curso from tb_cursos
     inner join tb_cursos_usuario on fk_id_curso = id_curso
     where fk_usuario = '{$user}'";
 
-    $result = mysqli_query($con, $query);
+        $result = mysqli_query($con, $query);
 
-    echo "
-        <br><br><br>
+        echo "
         <table class='table table-striped mx-2 mt-3' >
         <thead>
           <tr>
@@ -62,11 +63,11 @@ include('connection.php');
         </thead>
         <tbody>
     ";
-    while ($row = mysqli_fetch_array($result)) {
+        while ($row = mysqli_fetch_array($result)) {
 
-        echo " <th scope='row'> $row[0] </th>";
-        echo "<td><b><h5>" . $row[1] . "</h5></b></td>";
-        echo "<td>
+            echo " <th scope='row'> $row[0] </th>";
+            echo "<td><b><h5>" . $row[1] . "</h5></b></td>";
+            echo "<td>
         <button  type='button' class='btn btn-info'  >
         <a href='certificate.php' style='text-decoration: none'>
             <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-bookmark-check-fill' viewBox='0 0 16 16'>
@@ -76,11 +77,12 @@ include('connection.php');
         </a>
         </button>
         </td>";
-        echo "</tr>";
-    }
-    // echo fg"<br>".$row[1];
-    // f
-    ?>
+            echo "</tr>";
+        }
+
+        ?>
+    </div>
+
 </body>
 
 </html>

@@ -26,7 +26,7 @@ include('connection.php');
             <li class="nav-item ml-2 mt-3">
                 <h6>Seja bem vindo, <?php echo $_SESSION['usuario']; ?>!</h6>
             </li>
-        
+
             <li class="nav-item">
                 <a class="nav-link active ml-5 m-2" href="home.php">Inicio</a>
             </li>
@@ -42,69 +42,46 @@ include('connection.php');
     </div>
 
 
-    <div class="card-body text-left">
-        <h5 class="card-title text-center">A melhor seleção de cursos</h5>
-        <ul class="list-unstyled">
-            <li class="media  my-4">
-                <img src="img/imgjava.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Java</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <p><a href="./courses.php?id=1" class="btn btn-primary mt-1">Obter curso</a></p>
-                </div>
+    <div class="container mt-3 p-3"  style="width: 900px; background-color: SandyBrown;">
+        <h4 style="color: whiteSmoke;">Cursos disponíveis para você:</h4>
+    </div>
+
+
+    <?php
+    $query = "select id_curso, nome_curso, descricao from tb_cursos";
+    $result = mysqli_query($con, $query);
+    
+    while ($row = mysqli_fetch_array($result)) {
+        echo 
+        "<div class='container mt-4' style='width: 900px;'>
+         <ul class='list-group list-group-flush'>
+            <li class='list-group-item'>
+                <h5>$row[1]</h5>
+                <p>$row[2]</p>
+                <button type='button' class='btn btn-info'>
+                    <a href='./courses.php?id=$row[0]' style='text-decoration: none; color: white'>
+                        Obter Curso
+                      
+                    </a>
+                </button>
             </li>
-            <hr>
-            <li class="media my-4">
-                <img src="img/imgpython.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Python</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <p><a href="./courses.php?id=4" class="btn btn-primary mt-1" name="5">Obter curso</a></p>
-                </div>
-            </li>
-            <hr>
-            <li class="media my-4">
-                <img src="img/imgphp.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">PHP</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <p><a href="./courses.php?id=3" class="btn btn-primary mt-1" name="3">Obter curso</a></p>
-                </div>
-            </li>
-            <hr>
-            <li class="media my-4">
-                <img src="img/imgsql.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">SQL</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <p><a href="./courses.php?id=6" class="btn btn-primary mt-1">Obter curso</a></p>
-                </div>
-            </li>
-            <hr>
-            <li class="media my-4">
-                <img src="img/imgjs.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Javascript</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <p><a href="./courses.php?id=2" class="btn btn-primary mt-1">Obter curso</a></p>
-                </div>
-            </li>
-            <hr>
-            <li class="media my-4">
-                <img src="img/imgphoto.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Photoshop</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    <p><a href="./courses.php?id=5" class="btn btn-primary mt-1">Obter curso</a></p>
-                </div>
-            </li>
+            <li class='list-group-item'></li>
         </ul>
-
-
-
-
-    </div>
-    </div>
+    </div>";
+    }
+    ?>
 </body>
-
 </html>
+
+
+<?php
+/* <li class="media my-4">
+<img src="img/imgphoto.jpg" class="mr-3" alt="...">
+<div class="media-body">
+    <h5 class="mt-0 mb-1">Photoshop</h5>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <p><a href="./courses.php?id=5" class="btn btn-primary mt-1">Obter curso</a></p>
+</div>
+</li>*/
+
+?>

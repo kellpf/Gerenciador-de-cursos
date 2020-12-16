@@ -9,16 +9,20 @@ $descricao = $_POST['descricao'];
 $query = "insert into tb_cursos(nome_curso, descricao) values('{$nome_curso}', '{$descricao}')";
 $result = mysqli_query($con, $query);
 
-echo "linhas afetadas:".$result;
 
 if(mysqli_affected_rows($con) == 1 ) {
-    echo "<script>alert('Curso adicionado com sucesso!');
-         </script>";
+    echo   "<script>alert('Curso adicionado com sucesso!');
+    window.location = 'view-admin.php'; </script>";
 }
 else {
     echo "<script>alert('Não foi possivel adicionar o curso.');
+    window.location = 'view-add-course.php';
     </script>";
 }
+
+
+
+
 
 /*
 $query ="select nome_curso from tb_cursos";
