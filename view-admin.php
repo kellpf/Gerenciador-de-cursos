@@ -50,7 +50,7 @@ include('connection.php');
         </button>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5" action="delete-course.php">
         <h5 style="color: gray;">Cursos Atuais:</h5>
         <table class='table table-striped'>
             <thead>
@@ -70,7 +70,7 @@ include('connection.php');
             echo "<tbody>";
 
             while ($row = mysqli_fetch_array($result)) {
-                echo " <th scope='row'> $row[0]</th>";
+                echo " <th > $row[0]</th>";
                 echo " <th scope='row'> $row[1] </th>";
                 echo "<td  >  $row[2]  </td>";
                 echo "
