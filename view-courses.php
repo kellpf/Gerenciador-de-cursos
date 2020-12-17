@@ -6,6 +6,7 @@ include('connection.php');
 <html lang="pt-br">
 
 <head>
+    
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
@@ -42,7 +43,7 @@ include('connection.php');
     </div>
 
     <div class="container mt-5">
-    <h5 style="color: gray;">Seus Cursos:</h5>
+        <h5 style="color: gray;">Seus Cursos:</h5>
         <?php
         $user = $_SESSION['usuario'];
 
